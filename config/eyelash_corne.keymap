@@ -91,14 +91,14 @@
             bindings = <
 &kp ESC    &kp Q  &kp W      &kp E     &kp R  &kp T                              &kp C_VOLUME_UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &hh 7 TAB       &kp A  &kp S      &kp D     &hh 4 F  &kp G                    &kp C_PREV  &kp ENTER  &kp C_NEXT  &kp H        &hh 5 J  &kp K      &kp L    &hh 6 SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp C_VOLUME_DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                             &kp LGUI  &mo 1  &lt 3 ENTER                                              &lt 3 SPACE  &mo 2  &kp RALT
+&lt 1  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp ENTER              &kp C_VOLUME_DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
+                             &kp LGUI  &kp ESC  &kp ENTER                                              &kp SPACE  &kp BSPC  &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "CONFIG";
             bindings = <
 &trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                        &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
@@ -137,7 +137,7 @@
 &trans       &trans      &trans     &trans      &trans  &trans                      &mmv MOVE_UP                    &kp TILDE  &kp MINUS  &kp UNDER   &kp PIPE   &kp BACKSLASH  &kp CARET
 &kp LA(TAB) &hl RALT A  &hm LCTRL S &hm LGUI D  &none   &none        &mmv MOVE_LEFT &mkp LCLK       &mmv MOVE_RIGHT &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT  &kp COLON      &kp DOUBLE_QUOTES
 &trans      &none       &none       &none       &none   &none &none                       &mmv MOVE_DOWN                  &kp SLASH  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN   &kp QUESTION &none
-                                &trans      &trans      &trans                                                                   &trans       &trans     &trans
+                                &trans      &trans      &trans                                                                   &trans       &kp DELETE     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
         };
@@ -168,10 +168,10 @@
         layer_7 {
             display-name = "NUMBERS";
             bindings = <
-&trans      &none  &none  &none  &none &none                      &mmv MOVE_UP               &trans     &kp LG(N4)       &kp LG(N5)          &trans  &trans  &trans
-&kp LA(TAB) &none  &none       &none       &none &none        &mmv MOVE_LEFT &mkp LCLK &mmv MOVE_RIGHT &trans     &kp LG(KP_PLUS)  &kp LG(KP_MINUS)     &trans  &trans  &trans
-&trans      &none  &none       &none       &none &none &none                       &mmv MOVE_DOWN      &trans     &trans           &trans              &trans  &trans  &trans
-                &trans      &trans      &trans                                                              &trans       &trans    &trans
+&trans      &none  &none  &none  &none &none                      &mmv MOVE_UP                          &trans  &kp N7  &kp N8 &kp N9  &trans  &trans
+&kp LA(TAB) &none  &none       &none       &none &none        &mmv MOVE_LEFT &mkp LCLK &mmv MOVE_RIGHT  &trans   &kp N4  &kp N5 &kp N6  &trans  &trans
+&trans      &none  &none       &none       &none &none &none                       &mmv MOVE_DOWN       &trans   &kp N1  &kp N2 &N3  &trans  &trans
+                &trans      &trans      &trans                                                      &trans      &kp N0    &trans
             >;
             sensor-bindings = <&scroll_encoder>;
         };
