@@ -158,7 +158,7 @@
             display-name = "WinManager";
             bindings = <
 &trans      &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &none &none                      &mmv MOVE_UP               &trans     &kp LG(N4)       &kp LG(N5)          &trans  &trans  &trans
-&kp LA(TAB) &none       &none       &none       &none &none        &mmv MOVE_LEFT &mkp LCLK &mmv MOVE_RIGHT &trans     &kp LA(LG(F))    &kp LG(KC_PLUS)     &trans  &trans  &trans
+&kp LA(TAB) &none       &none       &none       &none &none        &mmv MOVE_LEFT &mkp LCLK &mmv MOVE_RIGHT &trans     &kp LG(KP_PLUS)  &kp LG(KP_MINUS)     &trans  &trans  &trans
 &trans      &none       &none       &none       &none &none &none                       &mmv MOVE_DOWN      &trans     &trans           &trans              &trans  &trans  &trans
                 &trans      &trans      &trans                                                              &trans       &trans    &trans
             >;
