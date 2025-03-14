@@ -89,8 +89,8 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T                              &kp C_VOLUME_UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S      &kp D     &hh 4 F  &kp G                    &kp C_PREV  &kp ENTER  &kp C_NEXT  &kp H        &hh 5 J  &kp K      &kp L    &hh 6 SEMI  &kp SQT
+&kp ESC    &kp Q  &kp W      &kp E     &kp R  &kp T                              &kp C_VOLUME_UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&hh 7 TAB       &kp A  &kp S      &kp D     &hh 4 F  &kp G                    &kp C_PREV  &kp ENTER  &kp C_NEXT  &kp H        &hh 5 J  &kp K      &kp L    &hh 6 SEMI  &kp SQT
 &kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp C_VOLUME_DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                              &kp LGUI  &mo 1  &lt 3 ENTER                                              &lt 3 SPACE  &mo 2  &kp RALT
             >;
@@ -160,6 +160,17 @@
 &trans      &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &none &none                      &mmv MOVE_UP               &trans     &kp LG(N4)       &kp LG(N5)          &trans  &trans  &trans
 &kp LA(TAB) &none       &none       &none       &none &none        &mmv MOVE_LEFT &mkp LCLK &mmv MOVE_RIGHT &trans     &kp LG(KP_PLUS)  &kp LG(KP_MINUS)     &trans  &trans  &trans
 &trans      &none       &none       &none       &none &none &none                       &mmv MOVE_DOWN      &trans     &trans           &trans              &trans  &trans  &trans
+                &trans      &trans      &trans                                                              &trans       &trans    &trans
+            >;
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_7 {
+            display-name = "NUMBERS";
+            bindings = <
+&trans      &none  &none  &none  &none &none                      &mmv MOVE_UP               &trans     &kp LG(N4)       &kp LG(N5)          &trans  &trans  &trans
+&kp LA(TAB) &none  &none       &none       &none &none        &mmv MOVE_LEFT &mkp LCLK &mmv MOVE_RIGHT &trans     &kp LG(KP_PLUS)  &kp LG(KP_MINUS)     &trans  &trans  &trans
+&trans      &none  &none       &none       &none &none &none                       &mmv MOVE_DOWN      &trans     &trans           &trans              &trans  &trans  &trans
                 &trans      &trans      &trans                                                              &trans       &trans    &trans
             >;
             sensor-bindings = <&scroll_encoder>;
