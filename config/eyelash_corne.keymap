@@ -134,7 +134,7 @@
         layer_4 {
             display-name = "VIM";
             bindings = <
-&trans       &trans      &trans     &trans      &trans  &trans                      &kp F13                    &kp TILDE  &kp MINUS  &kp UNDER   &kp PIPE   &kp BACKSLASH  &kp CARET
+&trans       &trans      &trans     &trans      &trans  &trans                      &kp F15                    &kp TILDE  &kp MINUS  &kp UNDER   &kp PIPE   &kp BACKSLASH  &kp CARET
 &kp LA(TAB) &hl RALT A  &hm LCTRL S &hm LGUI D  &none   &none        &mmv MOVE_LEFT &mkp LCLK       &mmv MOVE_RIGHT &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT  &kp COLON      &kp DOUBLE_QUOTES
 &trans      &none       &none       &none       &none   &none &none                 &kp F14                  &kp SLASH  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN   &kp QUESTION &none
                                 &trans      &trans      &trans                                                                   &trans       &kp DELETE     &trans
