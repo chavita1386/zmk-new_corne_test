@@ -101,7 +101,7 @@
             bindings = <
 &kp ESC     &kp Q  &kp W &kp F        &kp P       &kp B                                    &kp C_VOLUME_UP                  &kp J        &kp L   &kp U      &kp Y       &kp SEMI                   &kp BSPC
 &hh 8 TAB   &hl RALT A   &hm LCTRL R  &hm LGUI S  &hh 5 T &kp G                    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp M        &hh 6 N &hm LGUI E &hm LCTRL I &hh 7 O              &kp SQT
-&mo 2       &mt LSHIFT Z &kp X        &kp C       &kp D   &kp V   &kp ENTER              &kp C_VOLUME_DOWN                  &kp K        &kp H   &kp COMMA  &kp DOT     &mt RIGHT_SHIFT SLASH   &tog 0
+&mo 2       &mt LSHIFT Z &kp X        &kp C       &kp D   &kp V   &kp ENTER              &kp C_VOLUME_DOWN                  &kp K        &kp H   &kp COMMA  &kp DOT     &mt RIGHT_SHIFT SLASH   &tog 1
                                               &kp PRINTSCREEN  &kp ESC  &kp ENTER                                              &kp SPACE  &kp BSPC  &kp RS(LA(LG(M)))
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
